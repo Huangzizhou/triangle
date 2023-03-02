@@ -4888,7 +4888,7 @@ struct osub *newsubseg;
 /*                                                                           */
 /*****************************************************************************/
 
-void exactinit()
+static void exactinit()
 {
   REAL half;
   REAL check, lastcheck;
@@ -5888,7 +5888,7 @@ REAL permanent;
 }
 
 #ifdef ANSI_DECLARATORS
-REAL incircle(struct mesh *m, struct behavior *b,
+static REAL incircle(struct mesh *m, struct behavior *b,
               vertex pa, vertex pb, vertex pc, vertex pd)
 #else /* not ANSI_DECLARATORS */
 REAL incircle(m, b, pa, pb, pc, pd)
@@ -6395,7 +6395,7 @@ REAL permanent;
 }
 
 #ifdef ANSI_DECLARATORS
-REAL orient3d(struct mesh *m, struct behavior *b,
+static REAL orient3d(struct mesh *m, struct behavior *b,
               vertex pa, vertex pb, vertex pc, vertex pd,
               REAL aheight, REAL bheight, REAL cheight, REAL dheight)
 #else /* not ANSI_DECLARATORS */
